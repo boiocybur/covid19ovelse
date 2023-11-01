@@ -36,11 +36,5 @@ public class Filehandler {
             throw new RuntimeException(e);
         }
     }
-
-    public void printCovidData() {
-        for( Covid19Data data : covidData){
-            System.out.println(data.toString());
-        }
-    }
 }
 
