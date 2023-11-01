@@ -1,58 +1,58 @@
 public class Covid19Data {
-    private String Region;
-    private String Aldersgruppe;
-    private int bekræftedeTilfælde;
-    private int døde;
-    private int IndlagtePåIntensivAfdeling;
+    private String region;
+    private String ageGroup;
+    private int confirmedCases;
+    private int deaths;
+    private int intensiveCare;
     private String Dato;
 
-    public Covid19Data(String region, String aldersgruppe, int bekræftedeTilfælde, int døde, int indlagtePåIntensivAfdeling, String dato) {
-        this.Region = region;
-        this.Aldersgruppe = aldersgruppe;
-        this.bekræftedeTilfælde = bekræftedeTilfælde;
-        this.døde = døde;
-        this.IndlagtePåIntensivAfdeling = indlagtePåIntensivAfdeling;
+    public Covid19Data(String region, String ageGroup, int confirmedCases, int deaths, int intensiveCare, String dato) {
+        this.region = region;
+        this.ageGroup = ageGroup;
+        this.confirmedCases = confirmedCases;
+        this.deaths = deaths;
+        this.intensiveCare = intensiveCare;
         this.Dato = dato;
     }
 
     public String getRegion() {
-        return Region;
+        return region;
     }
 
     public void setRegion(String region) {
-        Region = region;
+        this.region = region;
     }
 
-    public String getAldersgruppe() {
-        return Aldersgruppe;
+    public String getAgeGroup() {
+        return ageGroup;
     }
 
-    public void setAldersgruppe(String aldersgruppe) {
-        Aldersgruppe = aldersgruppe;
+    public void setAgeGroup(String ageGroup) {
+        this.ageGroup = ageGroup;
     }
 
-    public int getBekræftedeTilfælde() {
-        return bekræftedeTilfælde;
+    public int getConfirmedCases() {
+        return confirmedCases;
     }
 
-    public void setBekræftedeTilfælde(int bekræftedeTilfælde) {
-        this.bekræftedeTilfælde = bekræftedeTilfælde;
+    public void setConfirmedCases(int confirmedCases) {
+        this.confirmedCases = confirmedCases;
     }
 
-    public int getDøde() {
-        return døde;
+    public int getDeaths() {
+        return deaths;
     }
 
-    public void setDøde(int døde) {
-        this.døde = døde;
+    public void setDeaths(int deaths) {
+        this.deaths = deaths;
     }
 
-    public int getIndlagtePåIntensivAfdeling() {
-        return IndlagtePåIntensivAfdeling;
+    public int getIntensiveCare() {
+        return intensiveCare;
     }
 
-    public void setIndlagtePåIntensivAfdeling(int indlagtePåIntensivAfdeling) {
-        IndlagtePåIntensivAfdeling = indlagtePåIntensivAfdeling;
+    public void setIntensiveCare(int intensiveCare) {
+        this.intensiveCare = intensiveCare;
     }
 
     public String getDato() {
@@ -66,11 +66,11 @@ public class Covid19Data {
     @Override
     public String toString() {
         return "Covid19Data{" +
-                "Region='" + Region + '\'' +
-                ", Aldersgruppe='" + Aldersgruppe + '\'' +
-                ", bekræftedeTilfælde=" + bekræftedeTilfælde +
-                ", døde=" + døde +
-                ", IndlagtePåIntensivAfdeling=" + IndlagtePåIntensivAfdeling +
+                "region='" + region + '\'' +
+                ", age group='" + ageGroup + '\'' +
+                ", confirmed cases=" + confirmedCases +
+                ", deaths=" + deaths +
+                ", intensive care=" + intensiveCare +
                 ", Dato='" + Dato + '\'' +
                 '}';
     }
