@@ -11,7 +11,7 @@ public class Filehandler {
     private ArrayList<Covid19Data> covidData = new ArrayList<>();
     private Scanner sc;
 
-    public void start() {
+    public void loadData() {
         try {
             File f = new File("covid19data.csv");
             sc = new Scanner(f, StandardCharsets.ISO_8859_1);
