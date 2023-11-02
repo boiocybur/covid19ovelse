@@ -7,7 +7,7 @@ public class Userinterface {
     public void start() {
         System.out.println("This is Covid-19 data for 2022.");
         System.out.println("To start, type either 'sort by age' or 'sort by region' or 'exit' to quit.");
-        fh.start();
+        fh.loadData();
 
         while (true) {
             String userInput = sc.nextLine().trim().toLowerCase();
