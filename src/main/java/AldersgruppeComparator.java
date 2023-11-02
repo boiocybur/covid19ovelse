@@ -1,0 +1,10 @@
+import java.util.Collections;
+import java.util.Comparator;
+
+public class AldersgruppeComparator implements Comparator<Covid19Data> {
+    @Override
+    public int compare(Covid19Data d1, Covid19Data d2) {
+        return d1.getAgeGroup().compareTo(d2.getAgeGroup());
+    }
+}
+

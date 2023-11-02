@@ -2,9 +2,12 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class Filehandler {
+    RegionComparator rc = new RegionComparator();
+    AldersgruppeComparator agc = new AldersgruppeComparator();
     private ArrayList<Covid19Data> covidData = new ArrayList<>();
     private Scanner sc;
 
@@ -36,11 +39,16 @@ public class Filehandler {
             throw new RuntimeException(e);
         }
     }
-
-    public void printCovidData() {
-        for( Covid19Data data : covidData){
-            System.out.println(data.toString());
+    public void printCovidData(){
+        for(Covid19Data data : covidData){
+            System.out.println(data);
         }
+    }
+    public void ageGroupSort(){
+        Collections.sort(covidData, new AldersgruppeComparator());
+    }
+    public void regionSort(){
+        Collections.sort(covidData, new RegionComparator());
     }
 }
 
