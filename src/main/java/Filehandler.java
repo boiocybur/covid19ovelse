@@ -30,7 +30,6 @@ public class Filehandler {
 
                         Covid19Data data = new Covid19Data(region, ageGroup, confirmedCases, deaths, intensiveCare, date);
                         covidData.add(data);
-                        System.out.println(data);
                     }
                 }
             }
